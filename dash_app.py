@@ -307,5 +307,10 @@ def update(period, interval, threshold, use_vol_adj, vol_factor):
 
     return fig, metrics_and_debug, insights_content, html.Div(""), backtest_html
 
-if __name__ == '__main__':
-    app.run(debug=True, port=8050)
+# For local testing only
+if __name__ == "__main__":
+    app.run_server(debug=True)
+
+
+# replace aboveif __name__ == '__main__':
+# same    app.run(debug=True, port=8050)
